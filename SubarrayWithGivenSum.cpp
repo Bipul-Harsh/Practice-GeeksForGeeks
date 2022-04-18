@@ -5,6 +5,8 @@ using namespace std;
 
  // } Driver Code Ends
 class Solution
+
+//code starts here
 {
     public:
     //Function to find a continuous sub-array which adds up to a given number.
