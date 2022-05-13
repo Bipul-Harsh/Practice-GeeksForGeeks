@@ -1,3 +1,4 @@
+// Top View Of Binary Tree
 // { Driver Code Starts
 //Initial Template for C++
 
@@ -105,10 +106,12 @@ class Solution
     //Function to return a list of nodes visible from the top view 
     //from left to right in Binary Tree.
     void getView(Node *ptr, map<int, pair<int, int>>&rec, int &left, int &right, int h=0, int c=0){
+        // To Set Limits to traverse
         if(c<left)
             left = c;
         else if(c>right)
             right = c;
+        // if its root element OR Lying above in same column OR getting outside
         if(h==0 || (rec[c].first==0 && c!=0) || rec[c].first>h)
             rec[c] = make_pair(h, ptr->data);
         if(ptr->left)
