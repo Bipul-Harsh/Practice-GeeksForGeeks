@@ -5,6 +5,7 @@ using namespace std;
  // } Driver Code Ends
 class Solution {
 public:
+    // array to bst
     void getSortedArrayBST(vector<int>nums, vector<int>&res, int start, int end){
         if(start>end)
             return;
