@@ -8,7 +8,8 @@ using namespace std;
 class Solution{
 
     // Function to find the trapped water between the blocks.
-    public:
+//Code for trapping rain water    
+public:
     long long trappingWater(int arr[], int n){
         // code here
         stack<int>s;
