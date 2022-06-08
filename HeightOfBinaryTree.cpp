@@ -99,7 +99,8 @@ struct Node
 class Solution{
     public:
     //Function to find the height of a binary tree.
-    void getHeight(Node *ptr, int &max_height, int height=0){
+    //By simply iterating overnode until reach the leaf
+	    void getHeight(Node *ptr, int &max_height, int height=0){
         if(height > max_height)
             max_height = height;
         if(ptr->left)
