@@ -12,7 +12,9 @@ public:
 	    // As all prime numbers are odd beside 2
 	   //So adding them up will give even numbers which are not prime
 	   //So we basically need to check if prime + 2 gives prime or not
-	    vector<bool>primeRecord(n+1, true);
+	    
+		//For Super Primes
+		vector<bool>primeRecord(n+1, true);
 	    primeRecord[0]=false;
 	    primeRecord[1]=false;
 	    for(int val=2; val*val<n; val++){
